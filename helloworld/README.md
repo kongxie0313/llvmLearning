@@ -7,13 +7,13 @@ LLVM_CONFIG?=~/kxproj/llvm-prebuild/llvm/bin/llvm-config
 
 	to
 
-LLVM_CONFIG?=~(Your llvm installation root dir)/llvm/bin/llvm-config
+LLVM_CONFIG?=(Your llvm installation root dir)/llvm/bin/llvm-config
 ```
 
 2.To compile and link this program, run command:
 
 ```
-make
+ $ make
 ```
 
 3.Create file 'test.c' like thie:
@@ -32,12 +32,12 @@ make
 
 4.Compile 'test.c', note, if terminal tells you **'clang: command not found'**, you should use the absolute path or modify the env variables.
 ```
-clang -emit-llvm -c test.c -o test.bc
+ $ clang -emit-llvm -c test.c -o test.bc
 ```
 
 5.Run this program like this:
 ```
-./helloworld test.bc
+ $ ./helloworld test.bc
 ```
 
 6.Check the output of this program. Normally, it will print the block number of the Bitcode file.

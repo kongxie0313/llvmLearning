@@ -7,13 +7,13 @@ LLVM_CONFIG?=~/kxproj/llvm-prebuild/llvm/bin/llvm-config
 
 	to
 
-LLVM_CONFIG?=~(Your llvm installation root dir)/llvm/bin/llvm-config
+LLVM_CONFIG?=(Your llvm installation root dir)/llvm/bin/llvm-config
 ```
 
 2.To compile and link this program, run command:
 
 ```
-make
+ $ make
 ```
 
 3.To check the diagnostic funciton, please create file 'hello.c' like thie:
@@ -28,12 +28,12 @@ make
 4.Set the env:
 
 ```
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:{Your llvm installation root dir}/llvm/libi
+ $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:{Your llvm installation root dir}/llvm/libi
 ```
 
 5.Run command and check the diagnostic information.
 
 ```
-./myproject hello.c
+ $ ./myproject hello.c
 ```
 
