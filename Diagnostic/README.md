@@ -28,7 +28,7 @@ LLVM_CONFIG?=(Your llvm installation root dir)/llvm/bin/llvm-config
 4.Set the env:
 
 ```
- $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:{Your llvm installation root dir}/llvm/libi
+ $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:{Your llvm installation root dir}/llvm/lib
 ```
 
 5.Run command and check the diagnostic information.
