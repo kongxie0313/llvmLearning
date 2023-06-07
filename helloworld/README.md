@@ -7,7 +7,7 @@ LLVM_CONFIG?=~/kxproj/llvm-prebuild/llvm/bin/llvm-config
 
 	to
 
-LLVM_CONFIG?=(Your llvm installation root dir)/llvm/bin/llvm-config
+LLVM_CONFIG?=(Your llvm installation root dir)/bin/llvm-config
 ```
 
 2.To compile and link this program, run command:

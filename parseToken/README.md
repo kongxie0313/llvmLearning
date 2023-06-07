@@ -3,7 +3,7 @@ Note: This program is based on **llvm 16.0.0**.
 1.Modify the first line of **Makefile**
 
 ```
-LLVM_CONFIG?=~/kxproj/llvm-prebuild/llvm/bin/llvm-config
+LLVM_CONFIG?=~/kxproj/llvm-prebuild/llvm-16.0.0/bin/llvm-config
 
 	to
 
@@ -16,24 +16,26 @@ LLVM_CONFIG?=(Your llvm installation root dir)/bin/llvm-config
  $ make
 ```
 
-3.To check the diagnostic funciton, please create file 'hello.c' like thie:
+3.To check the parse ability, please create file 'hello.c' like thie:
 
 ```
+	#include<stdio.h>
+
 	int main() {
-		printf("hello world")
-		return 0;
+        	int x = 8000;
+        	printf("hello, world!\n");
 	}
 ```
 
-4.Set the env varible:
+4.Set the env variable:
 
 ```
  $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:{Your llvm installation root dir}/lib
 ```
 
-5.Run command and check the diagnostic information.
+5.Run command and check tokens parsed.
 
 ```
- $ ./myproject hello.c
+ $ ./parseToken hello.c
 ```
 
