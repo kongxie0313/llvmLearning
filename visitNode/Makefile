@@ -7,7 +7,7 @@ endif
 SRC_DIR?=$(PWD)
 LDFLAGS+=$(shell $(LLVM_CONFIG) --ldflags)
 COMMON_FLAGS=-Wall -Wextra
-CXXFLAGS+=$(COMMON_FLAGS) $(shell $(LLVM_CONFIG) --cxxflags) -g
+CXXFLAGS+=$(COMMON_FLAGS) $(shell $(LLVM_CONFIG) --cxxflags)
 CPPFLAGS+=$(shell $(LLVM_CONFIG) --cppflags) -I$(SRC_DIR)
 
 CLANGLIBS = \
