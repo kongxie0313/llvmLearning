@@ -16,7 +16,7 @@ LLVM_CONFIG?=(Your llvm installation root dir)/bin/llvm-config
  $ make
 ```
 
-3.Create file 'test.c' like thie:
+3.Create file 'test.c' like this:
 
 ```
 	void fun() {

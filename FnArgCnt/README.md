@@ -16,7 +16,7 @@ LLVM_CONFIG?=(Your llvm installation root dir)/bin/llvm-config
  $ make
 ```
 
-3.Create file 'sum.c' under this directory like thie:
+3.Create file 'sum.c' under this directory like this:
 
 ```
 	int sum(int a, int b) {

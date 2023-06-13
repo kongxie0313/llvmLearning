@@ -16,7 +16,7 @@ LLVM_CONFIG?=(Your llvm installation root dir)/bin/llvm-config
  $ make
 ```
 
-3.To check the diagnostic funciton, please create file 'hello.c' like thie:
+3.To check the diagnostic funciton, please create file 'hello.c' like this:
 
 ```
 	int main() {
