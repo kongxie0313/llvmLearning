@@ -2,7 +2,6 @@
 #include "llvm/Pass.h"
 #include "llvm/Support/raw_ostream.h"
 #include <string>
-#include <iostream>
 #include <map>
 
 using namespace llvm;
@@ -47,9 +46,9 @@ namespace {
 		void printType(Type::TypeID id) {
 			std::map<Type::TypeID, std::string>::iterator iter = typeMap.find(id);
 			if(iter != typeMap.end()) {
-				std::cout << "Return typeid: " << iter->first << ". Info: " << iter->second << std::endl;
+				errs() << "Return typeid: " << iter->first << ". Info: " << iter->second << '\n';
 			} else {
-				std::cout << "Unknown return typeid: " << id << std::endl;
+				errs() << "Unknown return typeid: " << id << '\n';
 			}
 		}
 	};
