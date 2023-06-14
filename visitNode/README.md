@@ -26,7 +26,7 @@ LLVM_CONFIG?=(Your llvm installation root dir)/bin/llvm-config
 	}
 ```
 
-4.Set the env varible. Note, you must replace the dir path below!
+4.Set the env variable. Note, you must replace the dir path below!
 
 ```
  $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:{Your llvm installation root dir}/lib
