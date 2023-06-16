@@ -1,6 +1,6 @@
 Note: This program is based on llvm 16.0.4.
 
-This program will create a bitcode IR file manually. And you can verify the validity of the IR by llvm tool **llvm-dis**. The C++ source of the IR is a simple sum function.
+This program will create a bitcode IR based on a C++ function manually. And you can verify the validity of the IR by llvm tool **llvm-dis**. The C++ source code of the IR is a simple sum function.
 
 1.Modify the first line of **Makefile**
 
