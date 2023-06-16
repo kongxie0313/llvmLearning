@@ -70,7 +70,6 @@ Module* makeLLVMModule() {
 int main() {
 	Module* Mod = makeLLVMModule();
 	verifyModule(*Mod, &llvm::errs());
-	std::string ErrorInfo;
 	std::error_code EC;
 	std::unique_ptr<ToolOutputFile> Out(new ToolOutputFile("./sum.bc", EC, sys::fs::OF_None));
 	if(EC) {
